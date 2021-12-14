@@ -1,0 +1,20 @@
+#include "tim.h"
+#include "main.h"
+
+void HSYNC_Init(void)
+{
+	SIM->SCGC6 |= SIM_SCGC6_TPM1_MASK;
+	SIM->SOPT2 |= SIM_SOPT2_TPMSRC(2);
+	
+	SIM->SCGC5 |= SIM_SCGC5_PORTA_MASK;
+	PORTA->PCR[0] |= PORT_PCR_MUX(2);
+	
+	TPM1->SC |= TPM_SC_PS(0);
+	TPM1->SC |= TPM_SC_CMOD(1);
+	TPM1->MOD = 1366;
+	TPM1->SC &= ~TPM_SC_CPWMS_MASK;
+	TPM1->CONTROLS[0].CnSC |= (TPM_CnSC_ELSA_MASK | TPM_CnSC_MSB_MASK);
+	//1 tick  = 0.0208us
+	
+	
+}
