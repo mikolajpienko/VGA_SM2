@@ -571,9 +571,9 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
 work --depend=.\objects\startup_mkl05z4.d -o.\objects\startup_mkl05z4.o -I.\RTE
-\_Target_1 -IC:\Users\Micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\
-Include -IC:\Users\Micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\I
-nclude -IC:\Users\Micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\De
+\_Target_1 -IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\
+Include -IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\I
+nclude -IC:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\De
 vice\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 53
 6" --predefine="_RTE_ SETA 1" --predefine="MKL05Z32xxx4 SETA 1" --predefine="_R
 TE_ SETA 1" --list=.\listings\startup_mkl05z4.lst RTE\Device\MKL05Z32xxx4\start
