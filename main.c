@@ -3,16 +3,47 @@
 
 #define LED_RED 0
 #define delay_ms(x) for(uint32_t i=0; i<x*10000;i++)__nop();
+
+
 int main(void)
 {
-	
+	uint8_t fb[200][52];
 	SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTA_MASK;
+	
 	PORTB->PCR[8] = PORT_PCR_MUX(1);
+	PORTA->PCR[7] = PORT_PCR_MUX(3);
 	PTB->PDDR |= (1<<8);
+ 	
+	SIM->SCGC4 |= SIM_SCGC4_SPI0_MASK;
+	SIM->SCGC7 |= SIM_SCGC7_DMA_MASK;
+	SIM->SCGC6 |= SIM_SCGC6_DMAMUX_MASK;
+
+	SPI0->C1 |= SPI_C1_MSTR_MASK;
+	SPI0->BR |= SPI_BR_SPPR(1);
+	SPI0->BR |= SPI_BR_SPR(0);
+	SPI0->D = 0xAA;
+	SPI0->C1 |= SPI_C1_SPE_MASK;
+
+	
+ 	DMA0->DMA->SAR = (uint32_t) &fb[0][0];
+	DMA0->DMA->DAR = 0x40076005;
+	DMA0->DMA->DCR |= DMA_DCR_EINT_MASK;
+	DMA0->DMA->DCR |= DMA_DCR_SSIZE(1);
+	DMA0->DMA->DCR |= DMA_DCR_DSIZE(1);
+	DMA0->DMA->DCR |= DMA_DCR_SINC_MASK;
+	
+	DMAMUX0->CHCFG[0] |= DMAMUX_CHCFG_SOURCE(17);
+	//DMAMUX0->CHCFG[0] |= DMAMUX_CHCFG_ENBL_MASK;
+
+	//DMA0->DMA->DCR |= DMA_DCR_START_MASK;
+
 	
 	HSYNC_Init();
+	VSYNC_Init();
 	while(1)
 	{
-   delay_ms(500);
-	}
+
+		
+  }
 }
