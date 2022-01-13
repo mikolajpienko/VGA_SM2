@@ -102,7 +102,7 @@ int main(void)
 			printLine(100,50, (uint8_t)(100+22*cos(b)), (uint8_t)(50+22*sin(b)), 1);
 		}	
 		printLine(100,50, (uint8_t)(100+22*cos(b)), (uint8_t)(50+22*sin(b)), 0);
-		sprintf(textBuf, "TAJMER: %d    ", temp++);
+		sprintf(textBuf, "Pochopien to dzban :)");
 		if(b<2*3.1415)b+=3.1415/24;
 		else b =0;
   }

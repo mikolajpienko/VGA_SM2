@@ -1,3 +1,7 @@
+/**********************************************************************
+ * vga.h - frame buffer content's editor header file for KL05Z - VGA  *
+ ******************************************8***************************/
+
 #include "stdint.h"
 #include "string.h"
 #include "math.h"
