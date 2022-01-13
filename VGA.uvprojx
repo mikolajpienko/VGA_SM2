@@ -313,7 +313,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>4</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -393,6 +393,16 @@
               <FileType>1</FileType>
               <FilePath>.\tim.c</FilePath>
             </File>
+            <File>
+              <FileName>vga.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\vga.c</FilePath>
+            </File>
+            <File>
+              <FileName>font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\font.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -407,6 +417,11 @@
               <FileName>tim.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\tim.h</FilePath>
+            </File>
+            <File>
+              <FileName>vga.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\vga.h</FilePath>
             </File>
           </Files>
         </Group>
