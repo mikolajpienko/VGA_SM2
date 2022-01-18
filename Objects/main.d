@@ -12,3 +12,5 @@
 .\objects\main.o: vga.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: game.h
+.\objects\main.o: vga.h

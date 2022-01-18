@@ -5,7 +5,7 @@
 			Freescale KL05Z VGA Display
 	
 	Pin assingment:
-		- PB2: vertical sync pin
+		- PB13: vertical sync pin
 		- PB6: horizlontal sync pin
 		- PA7: SPI output, pixel data
 		- PB9: TPM Clock input connected via wire to PB6
@@ -22,7 +22,7 @@
 
 #include "main.h"
 #include "vga.h"
-
+#include "game.h"
 /*
 	1 bit sent to the display lasts for 4 pixels(SPI Clock is slower than pixel clock for this resolution),
 	thats why we need to "thicken" the line. lineToDraw is incrementing every four lines sent.
@@ -31,7 +31,7 @@ uint8_t lineToDraw = 0;
 uint16_t vline = 0; //current line being drawn
 uint8_t vready = 0;//vertical ready status 
 uint8_t busy = 0;//DMA busy user flag
-extern uint8_t fb[140][25];//main video frame buffer - 140 lines, 25 bytes per line = 200 bits per line
+extern uint8_t fb[140][25];//main video frame buffer - 140 lines, 25 bytes per line = 200 bits(pixels) per line
 char textBuf[20]; //temp char buffer
 
 /*
@@ -87,12 +87,17 @@ int main(void)
 	//timers init
 	HSYNC_Init();
 	VSYNC_Init();
-	
+	sprintf(textBuf, "lipski chuj");
 	printCircle(100, 50, 50, 1);
 	double b = 0;
 	uint8_t temp =0;
+//	gameWelcomeScreen();
+	clearScreen();
+	gamePrintBars();
 	while(1)
-	{		
+	{
+		
+	/*		
 		printString(textBuf, 1, 120);
 		for(double a=0;a<2*3.1415;a+=3.1415/24)
 		{
@@ -100,12 +105,13 @@ int main(void)
 			delay_ms(10);
 			printLine(100,50, (uint8_t)(100+44*cos(a)), (uint8_t)(50+44*sin(a)), 0);
 			printLine(100,50, (uint8_t)(100+22*cos(b)), (uint8_t)(50+22*sin(b)), 1);
+
 		}	
 		printLine(100,50, (uint8_t)(100+22*cos(b)), (uint8_t)(50+22*sin(b)), 0);
-		sprintf(textBuf, "Pochopien to dzban :)");
 		if(b<2*3.1415)b+=3.1415/24;
-		else b =0;
+		else b =0; */
   }
+		
 }
 void DMA0_IRQHandler()
 {

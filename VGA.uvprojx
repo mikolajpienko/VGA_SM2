@@ -403,6 +403,11 @@
               <FileType>1</FileType>
               <FilePath>.\font.c</FilePath>
             </File>
+            <File>
+              <FileName>game.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\game.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -422,6 +427,11 @@
               <FileName>vga.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\vga.h</FilePath>
+            </File>
+            <File>
+              <FileName>game.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\game.h</FilePath>
             </File>
           </Files>
         </Group>
