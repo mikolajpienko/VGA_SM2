@@ -87,16 +87,14 @@ int main(void)
 	//timers init
 	HSYNC_Init();
 	VSYNC_Init();
-	sprintf(textBuf, "lipski chuj");
+	
 	printCircle(100, 50, 50, 1);
 	double b = 0;
 	uint8_t temp =0;
-//	gameWelcomeScreen();
-	clearScreen();
-	gamePrintBars();
+	//gameWelcomeScreen();
+	gameInit();
 	while(1)
 	{
-		
 	/*		
 		printString(textBuf, 1, 120);
 		for(double a=0;a<2*3.1415;a+=3.1415/24)
@@ -141,6 +139,7 @@ void TPM1_IRQHandler(void)
 	if(TPM1->SC & TPM_SC_TOF_MASK)
 	{
 		TPM1->SC |= TPM_SC_TOF_MASK;
+		updateFlagSet();
 		vline = lineToDraw = vready = 0;//clear flags and variables as the whole screen is drawn; it's backporch time
 	}
 }

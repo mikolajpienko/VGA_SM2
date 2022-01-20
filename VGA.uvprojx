@@ -408,6 +408,11 @@
               <FileType>1</FileType>
               <FilePath>.\game.c</FilePath>
             </File>
+            <File>
+              <FileName>tsi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tsi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -432,6 +437,16 @@
               <FileName>game.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\game.h</FilePath>
+            </File>
+            <File>
+              <FileName>tsi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\tsi.h</FilePath>
+            </File>
+            <File>
+              <FileName>frdm_bsp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\frdm_bsp.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -36,8 +36,8 @@ void printPoint(uint8_t x, uint8_t y, uint8_t visible)
 	if(x==0) fb[y][0] = 1<<7;
 	else
 	{
-		if(visible)fb[y][(uint8_t)x/8] |= (1<<8)>>x%8;	
-		else fb[y][(uint8_t)x/8] &= ~((1<<8)>>x%8);
+		if(visible)fb[y][(uint8_t)x/8] |= (1<<7)>>x%8;	
+		else fb[y][(uint8_t)x/8] &= ~((1<<7)>>x%8);
 	}
 }
 
@@ -131,5 +131,12 @@ void printString(const char* string, uint8_t x, uint8_t y)
 	for(uint8_t i = 0; i<strlen(string);i++)
 	{
 		printChar(string[i], x+i, y);
+	}
+}
+void printRectangle(uint8_t x, uint8_t y, uint8_t x1, uint8_t y1,uint8_t visible)
+{
+	for(uint8_t i = 0; i<y1-y;i++)
+	{
+		printLine(x, y+i, x1, y+i, visible);
 	}
 }
