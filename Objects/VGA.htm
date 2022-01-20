@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\VGA.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\VGA.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Jan 20 20:44:35 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Jan 21 00:21:09 2022
 <BR><P>
 <H3>Maximum Stack Usage =        256 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -860,7 +860,7 @@ Global Symbols
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;calculateBallPosition
 </UL>
 
-<P><STRONG><a name="[88]"></a>gamePrintBars</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, game.o(i.gamePrintBars))
+<P><STRONG><a name="[88]"></a>gamePrintBars</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, game.o(i.gamePrintBars))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = gamePrintBars &rArr; printRectangle &rArr; printLine &rArr; printPoint
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printRectangle
@@ -900,7 +900,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[84]"></a>mainLoop</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, game.o(i.mainLoop))
+<P><STRONG><a name="[84]"></a>mainLoop</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, game.o(i.mainLoop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
 <LI>Call Chain = mainLoop &rArr; calculateBallPosition &rArr; checkForCollision &rArr;  gameInit (Cycle)
 </UL>

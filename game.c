@@ -12,7 +12,7 @@ struct Bar
 		unsigned char id;
 		unsigned char x;
 		unsigned char y;
-	}bars[36];
+	}bars[57];
 	
 struct Player
 	{
@@ -31,6 +31,7 @@ struct Ball
 
 void mainLoop()
 {
+	unsigned char val = 0;
 	while(1)
 	{
 		clearScreen();
@@ -41,7 +42,8 @@ void mainLoop()
 		ballMove = 1;
 		while(misses<5)
 		{
-			gameMovePlayer(TSI_ReadSlider() *1.85);
+			val = TSI_ReadSlider();
+			if(val>0)gameMovePlayer(val *1.85);
 			if(flag == 1)
 			{
 				flag = 0;
@@ -101,12 +103,17 @@ void gamePrintBars()
 		bars[i].id = i;
 		
 	
-		if(i>19)
+		if(i>19 && i<=38)
 		{
 			bars[i].x = i*BAR_LENGTH - 200;
 			bars[i].y = BAR_THICK + 2;
 		}
-		else 
+		else if(i>38)
+		{
+			bars[i].x = (i*BAR_LENGTH-390);
+			bars[i].y = BAR_THICK*2 + 3;
+		}
+		else
 		{
 			bars[i].x = i*BAR_LENGTH;
 			bars[i].y = 1;

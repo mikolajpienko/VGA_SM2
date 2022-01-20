@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.36.0.0
 Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Mikolaj Pienko, AGH UST, LIC=----
+License Information: Miko³aj Pieñko, AGH UST, LIC=----
  
 Tool Versions:
 Toolchain:       MDK-Lite  Version: 5.36.0.0
@@ -21,35 +21,35 @@ Target DLL:      Segger\JL2CM3.dll V2.99.40.0
 Dialog DLL:      TARMCM1.DLL V1.14.4.0
  
 <h2>Project:</h2>
-C:\Users\Micza\Downloads\vga (1)\vga\VGA.uvprojx
-Project File Date:  01/20/2022
+C:\Users\micza\Documents\Studia\SM2\VGA_GIT\VGA_SM2\VGA.uvprojx
+Project File Date:  01/21/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
-compiling font.c...
-assembling startup_MKL05Z4.s...
 compiling vga.c...
 vga.c(142): warning:  #1-D: last line of file ends without a newline
   }
 vga.c: 1 warning, 0 errors
+compiling tim.c...
 compiling main.c...
 main.c(92): warning:  #177-D: variable "b"  was declared but never referenced
   	double b = 0;
 main.c(93): warning:  #177-D: variable "temp"  was declared but never referenced
   	uint8_t temp =0;
 main.c: 2 warnings, 0 errors
-compiling tim.c...
+compiling font.c...
+assembling startup_MKL05Z4.s...
 compiling tsi.c...
-compiling system_MKL05Z4.c...
 compiling game.c...
-game.c(253): warning:  #223-D: function "sprintf" declared implicitly
+game.c(260): warning:  #223-D: function "sprintf" declared implicitly
   			sprintf(txtBuf, "Missed  %d/5", misses);
-game.c(323): warning:  #1-D: last line of file ends without a newline
+game.c(330): warning:  #1-D: last line of file ends without a newline
   }
 game.c: 2 warnings, 0 errors
+compiling system_MKL05Z4.c...
 linking...
-Program Size: Code=9620 RO-data=1508 RW-data=36 ZI-data=3980  
+Program Size: Code=9644 RO-data=1508 RW-data=36 ZI-data=4044  
 ".\Objects\VGA.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -70,9 +70,9 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_Target_1
-  C:\Users\Micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
-  C:\Users\Micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include
-  C:\Users\Micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
+  C:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include
+  C:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
 
@@ -80,14 +80,14 @@ Package Vendor: Keil
       Include file:  CMSIS\Driver\Include\Driver_SPI.h
 
    * Component: ARM::CMSIS Driver:SPI:Custom:1.0.0
-      Include file:  CMSIS\Driver\Include\Driver_SPI.h
       Source file:   CMSIS\Driver\DriverTemplates\Driver_SPI.c
+      Include file:  CMSIS\Driver\Include\Driver_SPI.h
 
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\startup_MKL05Z4.s
       Source file:   Device\Source\system_MKL05Z4.c
+      Source file:   Device\Source\ARM\startup_MKL05Z4.s
 Build Time Elapsed:  00:00:01
 </pre>
 </body>
