@@ -91,7 +91,7 @@ int main(void)
 	printCircle(100, 50, 50, 1);
 	double b = 0;
 	uint8_t temp =0;
-	//gameWelcomeScreen();
+	gameWelcomeScreen();
 	gameInit();
 	while(1)
 	{

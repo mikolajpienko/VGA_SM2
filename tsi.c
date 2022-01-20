@@ -59,7 +59,7 @@ void TSI_Init (void) {
 								| TSI_GENCS_TSIEN_MASK);
 	
   NVIC_ClearPendingIRQ(TSI0_IRQn);
-	NVIC_SetPriority(TSI0_IRQn, 3);
+	NVIC_SetPriority(TSI0_IRQn, 2);
   NVIC_EnableIRQ(TSI0_IRQn);
   self_calibration();
 }
