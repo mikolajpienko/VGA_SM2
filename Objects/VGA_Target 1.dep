@@ -1,6 +1,6 @@
 Dependencies for Project 'VGA', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\main.c)(0x61E9E762)(--c99 -c --cpu Cortex-M0+ -D__EVAL -g -O3 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x61EB36C8)(--c99 -c --cpu Cortex-M0+ -D__EVAL -g -O3 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (main.h)(0x61E5ED49)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D4)
 I (tim.h)(0x61E5ED49)
@@ -26,13 +26,13 @@ I (C:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cor
 I (C:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D43D42)
 I (C:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D43D42)
 I (C:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D43D42)
-F (.\vga.c)(0x61E9E763)(--c99 -c --cpu Cortex-M0+ -D__EVAL -g -O3 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o .\objects\vga.o --omf_browse .\objects\vga.crf --depend .\objects\vga.d)
+F (.\vga.c)(0x61EB31DD)(--c99 -c --cpu Cortex-M0+ -D__EVAL -g -O3 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o .\objects\vga.o --omf_browse .\objects\vga.crf --depend .\objects\vga.d)
 I (vga.h)(0x61E9E763)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DE)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DE)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x602577D8)
 F (.\font.c)(0x61E5ED49)(--c99 -c --cpu Cortex-M0+ -D__EVAL -g -O3 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o .\objects\font.o --omf_browse .\objects\font.crf --depend .\objects\font.d)
-F (.\game.c)(0x61E9EE64)(--c99 -c --cpu Cortex-M0+ -D__EVAL -g -O3 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o .\objects\game.o --omf_browse .\objects\game.crf --depend .\objects\game.d)
+F (.\game.c)(0x61EB3947)(--c99 -c --cpu Cortex-M0+ -D__EVAL -g -O3 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\micza\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\micza\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o .\objects\game.o --omf_browse .\objects\game.crf --depend .\objects\game.d)
 I (game.h)(0x61E9E762)
 I (vga.h)(0x61E9E763)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DE)

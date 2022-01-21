@@ -28,29 +28,31 @@ Project File Date:  01/21/2022
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 compiling vga.c...
-vga.c(142): warning:  #1-D: last line of file ends without a newline
+vga.c(146): warning:  #1-D: last line of file ends without a newline
   }
 vga.c: 1 warning, 0 errors
 compiling tim.c...
+compiling font.c...
 compiling main.c...
 main.c(92): warning:  #177-D: variable "b"  was declared but never referenced
   	double b = 0;
 main.c(93): warning:  #177-D: variable "temp"  was declared but never referenced
   	uint8_t temp =0;
 main.c: 2 warnings, 0 errors
-compiling font.c...
 assembling startup_MKL05Z4.s...
 compiling tsi.c...
 compiling game.c...
-game.c(260): warning:  #223-D: function "sprintf" declared implicitly
+game.c(47): warning:  #177-D: variable "ready"  was declared but never referenced
+  	unsigned char ready = 3;
+game.c(292): warning:  #223-D: function "sprintf" declared implicitly
   			sprintf(txtBuf, "Missed  %d/5", misses);
-game.c(330): warning:  #1-D: last line of file ends without a newline
+game.c(365): warning:  #1-D: last line of file ends without a newline
   }
-game.c: 2 warnings, 0 errors
+game.c: 3 warnings, 0 errors
 compiling system_MKL05Z4.c...
 linking...
-Program Size: Code=9644 RO-data=1508 RW-data=36 ZI-data=4044  
-".\Objects\VGA.axf" - 0 Error(s), 5 Warning(s).
+Program Size: Code=9624 RO-data=1504 RW-data=36 ZI-data=4044  
+".\Objects\VGA.axf" - 0 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -80,14 +82,14 @@ Package Vendor: Keil
       Include file:  CMSIS\Driver\Include\Driver_SPI.h
 
    * Component: ARM::CMSIS Driver:SPI:Custom:1.0.0
-      Source file:   CMSIS\Driver\DriverTemplates\Driver_SPI.c
       Include file:  CMSIS\Driver\Include\Driver_SPI.h
+      Source file:   CMSIS\Driver\DriverTemplates\Driver_SPI.c
 
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\system_MKL05Z4.c
       Source file:   Device\Source\ARM\startup_MKL05Z4.s
+      Source file:   Device\Source\system_MKL05Z4.c
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

@@ -133,6 +133,10 @@ void printString(const char* string, uint8_t x, uint8_t y)
 		printChar(string[i], x+i, y);
 	}
 }
+/*
+	void printRectangle(uint8_t x, uint8_t y, uint8_t x1, uint8_t y1,uint8_t visible)
+	Draws rectangle from point (x,y) to (x1,y1). Visible flag draws/erases rectangle from buffer.
+*/
 void printRectangle(uint8_t x, uint8_t y, uint8_t x1, uint8_t y1,uint8_t visible)
 {
 	for(uint8_t i = 0; i<y1-y;i++)

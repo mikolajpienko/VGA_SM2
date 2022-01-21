@@ -139,7 +139,7 @@ void TPM1_IRQHandler(void)
 	if(TPM1->SC & TPM_SC_TOF_MASK)
 	{
 		TPM1->SC |= TPM_SC_TOF_MASK;
-		updateFlagSet();
+		updateFlagSet(); // set flag to calculate a new ball position in game
 		vline = lineToDraw = vready = 0;//clear flags and variables as the whole screen is drawn; it's backporch time
 	}
 }
