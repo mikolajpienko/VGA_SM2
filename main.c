@@ -6,9 +6,9 @@
 	
 	Pin assingment:
 		- PB13: vertical sync pin
-		- PB6: horizlontal sync pin
+		- PB6: TPM Clock input connected via wire to PB6
 		- PA7: SPI output, pixel data
-		- PB9: TPM Clock input connected via wire to PB6
+		- PB9: horizontal sync pulse
 		
 	Video Information:
 		Resolution: 800x600
